@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Convertisseur Excel vers CSV - Client-Side</title>
+
+  <!-- Librairie Excel parser -->
+  <script src="https://cdn.sheetjs.com/xlsx-0.20.1/package/dist/xlsx.full.min.js"></script>
+
+  <!-- React & ReactDOM -->
+  <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+
+  <!-- Babel pour JSX -->
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+  <!-- Styles CSS -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main id="root">
+    <noscript>
+      <p style="text-align: center; margin-top: 2rem;">
+        ⚠️ JavaScript est requis pour utiliser cette application.
+      </p>
+    </noscript>
+    <section class="fallback-ui">
+      <h1>Convertisseur Excel → CSV</h1>
+      <p>Chargement de l’interface…</p>
+    </section>
+  </main>
+
+  <script type="text/babel" src="app.jsx"></script>
+</body>
+</html>
